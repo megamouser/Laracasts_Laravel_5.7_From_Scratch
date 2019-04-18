@@ -12,7 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    $tasks = [
+        'task one',
+        'task two',
+        'task three'
+    ];
+
+    return view('home', [
+        'tasks' => $tasks,
+        'date' => date('d.m.y'),
+        'name' => request('name'),
+        'script' => "<script>console.log('worked')</script>"
+    ]);
 });
 
 Route::get('about', function() {

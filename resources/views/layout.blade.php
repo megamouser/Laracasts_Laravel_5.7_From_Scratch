@@ -10,5 +10,8 @@
         <li><a href="about">about</a></li>
         <li><a href="contact">contact</a></li>
     </ul>
+    
+    @yield('content')
+    @yield('script')
 </body>
 </html>

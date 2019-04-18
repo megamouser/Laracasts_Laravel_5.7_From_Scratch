@@ -7,9 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About This Part
-<p>Manipulationg with Routes</p>
-<p>Laravel Routing</p>
-<p>Creating urls: "/", "contact", "about"</p>
-<p>Laravel Blade Templator</p>
-<p>Creating some resources/views with laravel blade templator<p>
+## Sending Data to Your Views
+<p>Laravel blade templator</p>
+<p>Sending data into your views</p>
