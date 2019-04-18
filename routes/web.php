@@ -18,18 +18,13 @@ Route::get('/', function () {
         'task three'
     ];
 
-    return view('home', [
-        'tasks' => $tasks,
-        'date' => date('d.m.y'),
-        'name' => request('name'),
-        'script' => "<script>console.log('worked')</script>"
-    ]);
+    $script = '<script>console.log("test")</script>';
 
     return view('home')
             ->withTasks($tasks)
             ->withDate(date('d.m.y'))
             ->withName(request('name'))
-            ->withScript('script');
+            ->withScript($script);
 });
 
 Route::get('about', function() {
