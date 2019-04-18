@@ -10,3 +10,6 @@
 ## Sending Data to Your Views
 <p>Laravel blade templator</p>
 <p>Sending data into your views</p>
+
+## Git commands
+git branch -D branchname | delete the branch with branchname
