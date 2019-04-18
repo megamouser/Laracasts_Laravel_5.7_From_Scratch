@@ -17,14 +17,14 @@ Route::get('/', function () {
         'task two',
         'task three'
     ];
-
     $script = '<script>console.log("test")</script>';
 
-    return view('home')
-            ->withTasks($tasks)
-            ->withDate(date('d.m.y'))
-            ->withName(request('name'))
-            ->withScript($script);
+    return view('home')->with([
+        'tasks' => $tasks,
+        'date' => date('d.m.y'),
+        'name' => request('name'),
+        'script' => $script
+    ]);
 });
 
 Route::get('about', function() {
