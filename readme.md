@@ -12,3 +12,4 @@
 <p>Laravel Routing</p>
 <p>Creating urls: "/", "contact", "about"</p>
 <p>Laravel Blade Templator</p>
+<p>Creating some resources/views with laravel blade templator<p>
