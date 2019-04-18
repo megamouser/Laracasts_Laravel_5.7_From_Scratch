@@ -11,26 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    $tasks = [
-        'task one',
-        'task two',
-        'task three'
-    ];
-    $script = '<script>console.log("test")</script>';
+Route::get('/', 'PagesController@home');
 
-    return view('home')->with([
-        'tasks' => $tasks,
-        'date' => date('d.m.y'),
-        'name' => request('name'),
-        'script' => $script
-    ]);
-});
+Route::get('about', 'PagesController@about');
 
-Route::get('about', function() {
-    return view('about');
-});
-
-Route::get('contact', function() { // example.com/contact
-    return view('contact');
-});
+Route::get('contact', 'PagesController@contact');
