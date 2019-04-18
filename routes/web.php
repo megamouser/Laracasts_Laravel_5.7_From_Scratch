@@ -24,6 +24,12 @@ Route::get('/', function () {
         'name' => request('name'),
         'script' => "<script>console.log('worked')</script>"
     ]);
+
+    return view('home')
+            ->withTasks($tasks)
+            ->withDate(date('d.m.y'))
+            ->withName(request('name'))
+            ->withScript('script');
 });
 
 Route::get('about', function() {
