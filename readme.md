@@ -7,9 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Sending Data to Your Views
-<p>Laravel blade templator</p>
-<p>Sending data into your views</p>
-
-## Git commands
-git branch -D branchname | delete the branch with branchname
+## Migrations
+<p>php artisan migrate</p>
+<p>php artisan migrate:rollback</p>
+<p>php artisan migrate:fresh</p>
