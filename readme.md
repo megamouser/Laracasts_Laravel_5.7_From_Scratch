@@ -7,7 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Migrations
-<p>php artisan migrate</p>
-<p>php artisan migrate:rollback</p>
-<p>php artisan migrate:fresh</p>
+## Eloquent, Namespacing, and MVC
+<p>php artisan make:model Project</p>
+<p>php artisan tinker</p>
+<p>In tinker:</p>
+<p>App\Project::all()->first()</p>
+<p>$project = new App\Project;</p>
+<p>$project->title = 'My First Project';</p>
+<p>$project->description = 'Lorem ipsum';</p>
+<p>$project->save();</p>
+<p>App\Project::first()->title;</p>
+<p>App\Project::all()->map->title;</p>
