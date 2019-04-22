@@ -3,7 +3,7 @@
 @section('title', 'home')
 
 @section('header')
-<h1>home</h1>
+<h1 class="title">home</h1>
 @endsection
 
 @section('content')

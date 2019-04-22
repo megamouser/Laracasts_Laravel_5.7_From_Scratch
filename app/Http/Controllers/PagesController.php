@@ -32,29 +32,6 @@ class PagesController extends Controller
     {
         return view('contact');
     }
-
-    public function projects()
-    {
-        $projects = Project::all();
-        return view('projects.projects', compact('projects'));
-    }
-
-    public function create()
-    {
-        return view('projects.create');
-    }
-
-    public function store()
-    {
-        $project = new Project();
-
-        $project->title = request('title');
-        $project->description = request('description');
-
-        $project->save();
-
-        return redirect('/projects');
-    }
 }
 
 

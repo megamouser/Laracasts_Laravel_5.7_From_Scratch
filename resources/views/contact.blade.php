@@ -3,5 +3,5 @@
 @section('title', 'contact')
 
 @section('header')
-<h1>contact</h1>
+<h1 class="title">contact</h1>
 @endsection
