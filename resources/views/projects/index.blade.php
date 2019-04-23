@@ -7,7 +7,7 @@
 @section('content')
     <ul>
         @foreach($projects as $project)
-            <li>title: {{ $project->title }}</li>
+            <li>title: <a href="/projects/{{ $project->id }}">{{ $project->title }}</a></li>
             <li>description: {{ $project->description }}</li>
         @endforeach
     </ul>
