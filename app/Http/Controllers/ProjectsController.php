@@ -39,6 +39,8 @@ class ProjectsController extends Controller
             'title' => request('title'),
             'description' => request('description')
         ]);
+
+        return redirect('/projects');
     }
 
     /**
@@ -49,7 +51,6 @@ class ProjectsController extends Controller
      */
     public function show(Project $project)
     {
-        return $project;
         return view('projects.show', compact('project'));
     }
 
