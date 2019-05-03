@@ -35,11 +35,7 @@ class ProjectsController extends Controller
      */
     public function store(Request $request)
     {
-        Project::create([
-            'title' => request('title'),
-            'description' => request('description')
-        ]);
-
+        Project::create(request(['title', 'description']));
         return redirect('/projects');
     }
 
@@ -74,10 +70,7 @@ class ProjectsController extends Controller
      */
     public function update(Project $project)
     {
-        $project->title = request('title');
-        $project->description = request('description');
-        $project->save();
-
+        $project->update(request(['title', 'description']));
         return redirect('/projects');
     }
 

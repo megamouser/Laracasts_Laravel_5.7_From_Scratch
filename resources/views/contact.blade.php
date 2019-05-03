@@ -2,6 +2,8 @@
 
 @section('title', 'contact')
 
-@section('header')
-<h1 class="title">Contact</h1>
+@section('content')
+<div class="container">
+    <h1 class="title">Contact</h1>
+</div>
 @endsection
