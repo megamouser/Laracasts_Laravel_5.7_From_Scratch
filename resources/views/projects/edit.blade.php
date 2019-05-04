@@ -13,7 +13,7 @@
             <div class="control">
             <input type="text" class="input" name="title" placeholder="Title" value="{{ $project->title }}">
             </div>
-        </div>
+d        </div>
 
         <div class="field">
             <label class="label" for="description">Description</label>
