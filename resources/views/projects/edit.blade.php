@@ -11,9 +11,9 @@
             <label class="label" for="title">Title</label>
 
             <div class="control">
-            <input type="text" class="input" name="title" placeholder="Title" value="{{ $project->title }}">
+                <input type="text" class="input" name="title" placeholder="Title" value="{{ $project->title }}">
             </div>
-d        </div>
+        </div>
 
         <div class="field">
             <label class="label" for="description">Description</label>
