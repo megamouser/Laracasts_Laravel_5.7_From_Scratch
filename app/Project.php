@@ -20,4 +20,3 @@ class Project extends Model
 }
 
 
-
